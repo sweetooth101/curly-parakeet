@@ -7,15 +7,15 @@ $main-color:#e73827;
 $white:#fff;
 $cinnabar: #e73827;
 $tart-orange: #f7484e;
+$cerulean:#27A3E7;
+$blizzard-blue:#27c3e7;
 
 
 
-$nav: $cinnabar 28%, $tart-orange 86%;
 
-.nav-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+$nav: $cerulean 28%, $blizzard-blue 86%;
+
+.nav-wrapper {    
     letter-spacing: 1.75px;
     background: linear-gradient(135deg,$nav);
     color:$white;
@@ -23,28 +23,29 @@ $nav: $cinnabar 28%, $tart-orange 86%;
     font-weight: 700;
     
   }
-  
-
-.name{
-    font-family: $font-nav ;
-    font-size:4rem;
-    align-self: center;
-} 
-
-.animation{
-    align-self: center;
+.nav{
+    max-width: 800px;
+    margin:0 auto;
+    width:100%;
     display: flex;
     flex-direction: row;
-    padding-right: 2.5em;
+    justify-content: space-between;
+}  
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     
 }
-.box{
-    height:15px;
-    width:15px;
-    background: white;
-    margin:1px;
-    
+
+.icons img{
+    margin: 0 5px;
+    width:36px;
+    height:36px;
 }
+
+  
 
 .menu{
     display: flex;
@@ -56,4 +57,19 @@ $nav: $cinnabar 28%, $tart-orange 86%;
 
 .menu h1{
     margin-bottom: 1.3rem;
+}
+
+
+
+
+/*ABOUT*/
+
+.about{
+    display:flex;
+    flex-direction: row;
+    padding: 2em 10em 1.25em 10em;
+}
+
+.about img{
+    max-height: 50em;
 }
