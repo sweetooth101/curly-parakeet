@@ -65,11 +65,30 @@ $nav: $cerulean 28%, $blizzard-blue 86%;
 /*ABOUT*/
 
 .about{
+    max-width: 1200px;
+    width:100%;
+    margin:0 auto;
     display:flex;
     flex-direction: row;
     padding: 2em 10em 1.25em 10em;
 }
 
-.about img{
-    max-height: 50em;
+.about-photo img{
+    max-height: 40em;
+}
+
+.about h1{
+    font-size:2.4rem;
+    margin: 0 0 .5em;
+}
+
+.about-text h3{
+    font-weight:400;
+    font-size: 1.7rem;
+    line-height: 2.7rem;;
+}
+
+.about-text{
+    padding:0 2.5em;
+
 }

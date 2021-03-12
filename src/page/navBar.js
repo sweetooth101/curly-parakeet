@@ -1,6 +1,6 @@
 import React from'react';
 import '../assets/sass.scss';
-import Git from '../assets/img/github.png'
+import Git from '../assets/img/github64.png'
 import LI from '../assets/img/bl-li.png'
 
 

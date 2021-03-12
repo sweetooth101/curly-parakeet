@@ -1,16 +1,16 @@
 import React from 'react';
-import tree from '../assets/img/trees.jpg'
+import me from '../assets/img/me.jpg'
 
 const About = () => {
     return(
         <div className='about'>
-            <div className='aboutPhoto'><img src={tree} alt='tree'/></div>
-            <div className='aboutText'>
+            <div className='about-photo'><img src={me} alt='tree'/></div>
+            <div className='about-text'>
                 <h1>Hi there! 👋 I'm Victor Gordian</h1>
-                <h3>Prior to pivoting my career towards software engineering, I worked at a major advertising agency and launched a freelance writing career. After working with Fortune-100 brands at VaynerMedia, serving as Gary Vaynerchuk’s assistant, and writing for UPROXX Media I longed for a more challenging career that would allow me to grow and evolve as a creative professional.
-                After some introductory, online JavaScript classes I was hooked; I knew software engineering was the career path for me. In September 2018, I enrolled in Fullstack Academy’s full-time Software Engineering Immersive program. Upon graduating from Fullstack in December 2018, I was offered a Teaching Fellowship role to help the next cohort of students in their journey to software engineering.
-                In April 2019 I started as a Jr. Full Stack Engineer at Paro in Chicago. At Paro, we're building the future of finance work by empowering people to do what they love. Check it out at Paro.io.
-                When I'm not being a professional computer nerd... I'm probably exploring new bars/restaurants in Chicago, going to a concert, watching sports, wishing I had a pup, and tweeting too much.</h3>
+                <h3>Prior to pivoting my career towards software engineering, I worked as a Project Manager in and out of the Tech Industry. My interest and experience started as a developer for Wordpress sites, which eventually led to learning Javascript, and jQuery. Because of this experience, I was able to join SQAsquared as Jr QA where I learned about test workflows such as functional, non-functional and automation testing. 
+                    After some introductory online React classes, I was hooked; I knew software engineering was the career path for me.  In June 2018, I enrolled in Lambda for an immersive full-stack course.  Upon graduating I was offered a Team Lead position to help the next cohort of students in their journey of software engineering. As a result I was hired by Mobile Wash to contribute to develop Frontend, Backend features and help release app updates every 2-3 weeks with QA support.
+                    When I’m not being a professional computer nerd…I’m probably planning my next adventure around Los Angeles, going on hikes or drives. Watching my dog sleep, while waiting for restaurants and bars to reopen safely and playing League of Legends or Call of Duty. 
+                </h3>
             </div>
         </div>
     )
