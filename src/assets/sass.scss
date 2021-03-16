@@ -4,6 +4,7 @@
 
 $font-nav: 'Poiret One', cursive;
 $font-about: "NeueHaasUnicaW1G-Regular", "Helvetica Neue", "Helvetica", sans-serif;
+$font-projects: 'Source Sans Pro',sans-serif;
 $main-color:#e73827;
 $white:#fff;
 $cinnabar: #e73827;
@@ -115,27 +116,92 @@ $nav: $cerulean 28%, $blizzard-blue 86%;
 
 /*projects*/
 
+.projects-wrapper{
+    border-top: 1px solid #27c3e7;
+}
+
+.projects{
+    max-width: 1200px;
+    width:80%;
+    margin: 0 auto;
+}
+
 .project{
     display:flex;
     flex-direction: row;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    border-top: 10px solid #27c3e7;
+    align-items: center; 
 
+}
+
+.projects h1{
+    font-size: 4rem;
+    font-family: $font-nav;
+    font-weight: 700;
+    margin-top:1.5em;
+}
+
+
+
+.name h1{
+    font-size:2.5rem;
+    font-family: $font-projects;
+    margin-bottom:.7em;
+}
+
+.name h3{
+    font-family: $font-projects;
+    font-size: 1.7rem;
+    line-height: 1.9rem;
+    font-weight: 400;
+}
+
+
+.deviceImages-wrapper{
+    position: relative;
 }
 
 .device-images{
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
 
 .device-images img:nth-child(1){
-    width:500px;
+    width:350px;
 }
 
 .device-images img:nth-child(2){
-    height:300px;
-    width:150px;
+    height:250px;
+   
+}
+
+
+
+.stack-icons{
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color: #fff;
+    display:flex;
+    justify-content: center;
+    opacity: 0;
+    transition: .9s ease;
+    align-items: center;
+}
+
+.stack-icons:hover{
+    opacity: 1;
+}
+
+
+.stack-icons img{
+    width:9em; 
+    max-width: 100%;
+    margin:.75em;
+
 }
