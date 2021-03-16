@@ -3,6 +3,7 @@
 
 
 $font-nav: 'Poiret One', cursive;
+$font-about: "NeueHaasUnicaW1G-Regular", "Helvetica Neue", "Helvetica", sans-serif;
 $main-color:#e73827;
 $white:#fff;
 $cinnabar: #e73827;
@@ -15,6 +16,8 @@ $blizzard-blue:#27c3e7;
 
 $nav: $cerulean 28%, $blizzard-blue 86%;
 
+
+/*nav*/
 .nav-wrapper {    
     letter-spacing: 1.75px;
     background: linear-gradient(135deg,$nav);
@@ -32,10 +35,13 @@ $nav: $cerulean 28%, $blizzard-blue 86%;
     justify-content: space-between;
 }  
 
+/*icons*/
+
 .icons{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     
 }
 
@@ -46,22 +52,23 @@ $nav: $cerulean 28%, $blizzard-blue 86%;
 }
 
 .icons img:nth-child(1){
-    width:35px;
-    height: 42px;
+    width:28px;
+    height: 32px;
 }
 
-.icons img:nth-child(5){
+.icons img:nth-child(4){
     width:30px;
-    height: 25px;
+    height: 30px;
 }
   
-
+/*menu*/
 .menu{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     font-family: $font-nav;
     font-size: 2rem;
+    width:100%;
 }
 
 .menu h1{
@@ -92,13 +99,43 @@ $nav: $cerulean 28%, $blizzard-blue 86%;
 }
 
 .about-text h3{
+    
     padding:.3em 0;
     font-weight:400;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     line-height: 2.7rem;;
 }
 
 .about-text{
     padding:0 2.5em;
+    font-family: $font-about;
 
+}
+
+
+/*projects*/
+
+.project{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 10px solid #27c3e7;
+
+}
+
+.device-images{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.device-images img:nth-child(1){
+    width:500px;
+}
+
+.device-images img:nth-child(2){
+    height:300px;
+    width:150px;
 }
