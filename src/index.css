@@ -55,3 +55,12 @@ html {
 	font-size: 62.5%;
   }
   
+*{
+	box-sizing:border-box;
+}  
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}

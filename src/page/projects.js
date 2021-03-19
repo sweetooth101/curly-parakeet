@@ -9,9 +9,15 @@ import IphoneX from '../assets/img/tenantly-iphonex.png'
 const Projects = () =>{
     return (     
             <div className='projects-wrapper'>
-                <div className='projects'>
-                    <h1>Projects</h1> 
-                        <div className='project'>                      
+                <ul className='projects'>
+                    
+                        <div className='project'>
+                         
+                                <div className='border-space top-left'/>
+                                <div className='border-space top-right'/>
+                                <div className='border-space bottom-left'/>
+                                <div className='border-space bottom-right'/>
+                                            
                             <div className='name'>
                                 <h1>Tenantly</h1>
                                 <h3>A property management application that makes the communication 
@@ -31,7 +37,59 @@ const Projects = () =>{
                                 
                             </div>    
                         </div>
-                </div>
+                        <div className='project'>
+                            
+                                <div className='border-space top-left'/>
+                                <div className='border-space top-right'/>
+                                <div className='border-space bottom-left'/>
+                                <div className='border-space bottom-right'/>
+                                                
+                            <div className='name'>
+                                <h1>Tenantly</h1>
+                                <h3>A property management application that makes the communication 
+                                    and financial transactions easier between the tenant and landlord. 
+                                    With two distict dashboards both tenants and clients have all of the 
+                                    tools needed to efficiently resolve work orders and track payments.</h3>
+                            </div>
+                            <div className='deviceImages-wrapper'>
+                                <div className='stack-icons'>
+                                    <img src={react} alt='react'/>
+                                    <img src={node} alt='node'/>
+                                </div>
+                                <div className='device-images'>
+                                    <img src={IpadPro} alt='Ipad'/>
+                                    <img src={IphoneX} alt='Ipad'/>
+                                </div>
+                                
+                            </div>    
+                        </div>
+                        <div className='project'>
+                            
+                                <div className='border-space top-left'/>
+                                <div className='border-space top-right'/>
+                                <div className='border-space bottom-left'/>
+                                <div className='border-space bottom-right'/>
+                                                  
+                            <div className='name'>
+                                <h1>Tenantly</h1>
+                                <h3>A property management application that makes the communication 
+                                    and financial transactions easier between the tenant and landlord. 
+                                    With two distict dashboards both tenants and clients have all of the 
+                                    tools needed to efficiently resolve work orders and track payments.</h3>
+                            </div>
+                            <div className='deviceImages-wrapper'>
+                                <div className='stack-icons'>
+                                    <img src={react} alt='react'/>
+                                    <img src={node} alt='node'/>
+                                </div>
+                                <div className='device-images'>
+                                    <img src={IpadPro} alt='Ipad'/>
+                                    <img src={IphoneX} alt='Ipad'/>
+                                </div>
+                                
+                            </div>    
+                        </div>
+                </ul>
             </div>
       
     )

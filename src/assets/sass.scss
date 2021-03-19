@@ -18,23 +18,45 @@ $blizzard-blue:#27c3e7;
 $nav: $cerulean 28%, $blizzard-blue 86%;
 
 
+
 /*nav*/
-.nav-wrapper {    
+.nav-wrapper {
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    border-bottom:1px solid $cerulean; 
+    background-color: $white;
     letter-spacing: 1.75px;
-    background: linear-gradient(135deg,$nav);
-    color:$white;
-    padding: 2em 10em 1.25em 10em;
+    color:$cerulean;
     font-weight: 700;
+    z-index: 99;
+    height:4.5em;
     
   }
 .nav{
-    max-width: 800px;
+    max-width: 1600px;  
+    width:85%;
     margin:0 auto;
-    width:100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}  
+    font-family: $font-nav;
+    font-size: 2rem;
+    height:100%;
+} 
+
+#left-button{
+    flex:1;
+    border-left:1px solid $cerulean;
+    border-right: 1px solid $cerulean;
+
+}
+
+#right-button{
+    flex:1;
+    border-right: 1px solid $cerulean;
+}
+
+
 
 /*icons*/
 
@@ -52,52 +74,63 @@ $nav: $cerulean 28%, $blizzard-blue 86%;
     height:24px;
 }
 
-.icons img:nth-child(1){
-    width:28px;
-    height: 32px;
-}
 
-.icons img:nth-child(4){
-    width:30px;
-    height: 30px;
-}
   
-/*menu*/
-.menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-family: $font-nav;
-    font-size: 2rem;
-    width:100%;
-}
-
-.menu h1{
-    margin-bottom: 1.3rem;
-}
-
 
 
 
 /*ABOUT*/
 
+
+
+.about-wrapper{
+    width:100%;
+    margin-top:3rem;
+    position: relative;
+    background-color: $white;
+    border-bottom: 1px solid $cerulean;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .about{
-    max-width: 1200px;
-    width:80%;
+    max-width: 1600px;
+    width:85%;
     margin:0 auto;
     display:flex;
     flex-direction: row;
-    padding: 2em 10em 1.25em 10em;
+    min-height: calc(100vh - 8rem + 1px);
+    border-right:1px solid $cerulean;
+    border-left: 1px solid $cerulean;
+    
+}
+
+.about-photo{
+    padding:5rem;
+    width:50%;
+    border-right:1px solid $cerulean;
+    display: flex;
+    justify-content: center;
 }
 
 .about-photo img{
-    max-height: 40em;
+    max-height: 55em;
 }
 
 .about h1{
     font-size:2.4rem;
     margin: 0 0 .5em;
 }
+
+
+.about-text{
+    padding: 5rem;
+    font-family: $font-about;
+    width:50%;
+ 
+}
+
 
 .about-text h3{
     
@@ -107,38 +140,44 @@ $nav: $cerulean 28%, $blizzard-blue 86%;
     line-height: 2.7rem;;
 }
 
-.about-text{
-    padding:0 2.5em;
-    font-family: $font-about;
 
-}
 
 
 /*projects*/
 
 .projects-wrapper{
-    border-top: 1px solid #27c3e7;
+    width:85%;
+    max-width:1600px;
+    margin:0 auto 3rem auto;
 }
 
 .projects{
-    max-width: 1200px;
-    width:80%;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto ;
+    padding-top:2em;
 }
 
 .project{
     display:flex;
     flex-direction: row;
-    align-items: center; 
+    align-items: center;
+    width:50%;
+    min-height: 23rem;
+    padding:1.75rem;
+    position: relative;
+    border-left: 1px solid $cerulean;
+    border-right: 1px solid $cerulean;
+    border-bottom:1px solid $cerulean;
+    background-color: $white; 
 
 }
 
-.projects h1{
-    font-size: 4rem;
-    font-family: $font-nav;
-    font-weight: 700;
-    margin-top:1.5em;
+.project:nth-child(even){
+    border-left:none;
 }
+
 
 
 
@@ -168,11 +207,11 @@ $nav: $cerulean 28%, $blizzard-blue 86%;
 }
 
 .device-images img:nth-child(1){
-    width:350px;
+    width:250px;
 }
 
 .device-images img:nth-child(2){
-    height:250px;
+    height:150px;
    
 }
 
@@ -204,4 +243,158 @@ $nav: $cerulean 28%, $blizzard-blue 86%;
     max-width: 100%;
     margin:.75em;
 
+}
+
+
+/*bottom bar*/
+#bar-bottom{
+    width:100%;
+    position:fixed;
+    bottom:0;
+    left:0;
+    z-index:99;
+    background-color: $white;
+    border-top: 1px solid $cerulean;
+    color:$cerulean;
+}
+
+.button-container{
+    height:5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*buttons*/
+
+.button-01{
+    position: relative;
+    width:100%;
+    height:100%;
+    padding:0;
+    background-color: $white;
+    border:0;
+    font-size: 2rem;
+    color:$cerulean;
+    outline: none;
+}
+
+.button-02{
+    width:85%;
+    max-width: 1600px;
+    border-left:1px solid $cerulean;
+    border-right: 1px solid $cerulean;
+}
+
+.button-01:hover{
+    box-shadow: 0px 0px 8px $cerulean;
+}
+
+.button-01:active{
+    border: 2px;
+}
+/*borders and borderspace*/
+
+.borderSpace-wrapper{
+    width:85%;
+    max-width: 1600px;
+    margin:0 auto;
+    position: relative;
+}
+
+.border-lines{
+    border:2px solid $cerulean;
+    position:absolute;
+    top:0;
+    bottom: 0;
+
+}
+
+.border-space{
+    width:1.5rem;
+    height:1.5rem;
+    position: absolute;
+    background: $white;
+    z-index: 50;
+}
+
+.top{
+    top:calc(4.4rem - 0.7rem);
+}
+
+.left{
+    left: calc(-0.7rem)
+}
+
+.middle{
+    left:calc(50% - .7rem)
+}
+
+.right{
+    right: calc(-0.7rem)
+}
+
+.bottom{
+    bottom:calc(-0.5rem);
+}
+
+.top-left{
+    left:-0.5rem;
+    top:-0.5rem;
+
+}
+
+.top-right{
+    right:-0.5rem;
+    top:-0.5rem;
+}
+
+.bottom-left{
+    left:-0.5rem;
+    bottom:-0.5rem;
+}
+
+.bottom-right{
+    right:-0.5rem;
+    bottom:-0.5rem
+}
+
+@media (max-width:1024px){
+    .about{
+        flex-direction: column;
+    }
+
+    .about-photo{
+        border:none;
+        width:100%;
+    }
+    .about-text{
+        width:100%;
+        padding-top:2em;
+    }
+}
+
+
+@media (max-width: 768px){
+    .about-wrapper{
+        width:85%;
+        margin-left:auto;
+        margin-right: auto;
+    }
+
+    .about{
+        width:100%;
+        
+    }
+
+    .about-photo{
+        padding-bottom: 2em;
+        
+    }
+
+    .about-photo img{
+        max-height: 30em;
+    }
+
+   
 }
