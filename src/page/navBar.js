@@ -1,6 +1,8 @@
 import React from'react';
 import '../assets/sass.scss';
 
+import pdf from '../assets/docs/Victor_Gordian_Resume.pdf'
+
 
 
 const NavBar = () =>{
@@ -15,10 +17,10 @@ const NavBar = () =>{
             
             <div className='nav'>
                 <div id='left-button'>
-                    <a><button className='button-01'>RESUME</button></a>
+                    <a href={pdf}><button className='button-01'>RESUME</button></a>
                 </div>
                 <div id='right-button'>
-                    <a><button className='button-01'>EMAIL</button></a>
+                    <a href="mailto:victorgordian103@gmail.com"><button className='button-01'>EMAIL</button></a>
                 </div>
                     
                 
