@@ -8,8 +8,8 @@ import BBar from './page/bottomBar';
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <About />
+      <NavBar  />
+      <About/>
       <Projects/>
       <BBar />
     </div>

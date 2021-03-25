@@ -1,4 +1,4 @@
-import React from'react';
+import React, {forwardRef} from'react';
 import '../assets/sass.scss';
 import react from '../assets/img/react.png'
 import node from '../assets/img/node.png'
@@ -8,7 +8,7 @@ import IphoneX from '../assets/img/tenantly-iphonex.png'
 
 const Projects = () =>{
     return (     
-            <div className='projects-wrapper'>
+            <div className='projects-wrapper' id={'projects'}>
                 <ul className='projects'>
                     
                         <div className='project'>

@@ -1,10 +1,34 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import down from '../assets/img/down.png'
 
 function BBar(){
-    const [inital, setInitial] = useState('PROJECTS')
+    const [project, setProject] = useState('PROJECTS')
+    
     const [hover, setHover] = useState(false)
     const [arrow, setArrow] = useState('▼')
+ 
+    const [number, setNumber] = useState(1)
+
+
+ 
+    const  handleScroll = (e) =>{
+        setNumber(window.pageYOffset)
+        
+    }
+
+    
+    useEffect(()=>{
+        handleScroll()
+        console.log(window)
+    }, [number])
+
+    // function checkScroll(){
+    //     if(setNumber>0)
+    // }
+    
+
+    console.log(number)
+
     return(
         <div id='bar-bottom'>
             <div className='borderSpace-wrapper'>
@@ -12,16 +36,30 @@ function BBar(){
                 <div className='border-space bottom middle'/>
                 <div className='border-space bottom right'/>
             </div>
-            <div className='button-container'>
-                <button className='button-01 button-02 btn' 
-                onMouseOver={()=>setHover(true)}
-                onMouseOut={()=> setHover(false)}>{hover? (arrow) : (inital) }</button>
+            <div className='button-container' >
+                {<button className='button-01 button-02 btn'
+                onClick={()=>setArrow('▲')}
+                onMouseEnter={()=>setHover(true)}
+                onMouseOut={()=>setHover(false)}>{ hover? (arrow) : (project)  }</button>}
                 
+                
+                 
                 
             </div>
+            
         </div>
     )
 }
 
+
+
 export default BBar;
 
+
+
+
+/** if(number < 1){
+    hover? (darrow) : (project)
+ }else{
+    hover? (uarrow) : (about) 
+ } **/
