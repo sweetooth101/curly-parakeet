@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import down from '../assets/img/down.png'
+import React, {createContext, useCallback, useEffect, useState, } from 'react';
+
 
 function BBar(){
     const [project, setProject] = useState('PROJECTS')
@@ -7,27 +7,40 @@ function BBar(){
     const [hover, setHover] = useState(false)
     const [arrow, setArrow] = useState('▼')
  
-    const [number, setNumber] = useState(1)
-
+    const [number, setNumber] = useState(0)
 
  
-    const  handleScroll = (e) =>{
-        setNumber(window.pageYOffset)
-        
+    const checkScroll = () => {
+        if(number>0){
+            setArrow('▲')
+            setProject('ABOUT')
+            
+        } else{
+            setArrow('▼')
+            setProject('PROJECTS')
+            
+        }
     }
+ 
+    const  handleScroll = useCallback(() =>{
+        setNumber(window.pageYOffset)
+        checkScroll()
+    },[checkScroll]);
 
+   
+
+    
+
+    
     
     useEffect(()=>{
         handleScroll()
-        console.log(window)
-    }, [number])
+        window.addEventListener('scroll', setNumber)
+    }, [ handleScroll])
 
-    // function checkScroll(){
-    //     if(setNumber>0)
-    // }
-    
-
-    console.log(number)
+   const clickHandler= (e) =>{
+        
+   }
 
     return(
         <div id='bar-bottom'>
@@ -38,7 +51,7 @@ function BBar(){
             </div>
             <div className='button-container' >
                 {<button className='button-01 button-02 btn'
-                onClick={()=>setArrow('▲')}
+                onClick={()=>console.log('hi')}
                 onMouseEnter={()=>setHover(true)}
                 onMouseOut={()=>setHover(false)}>{ hover? (arrow) : (project)  }</button>}
                 

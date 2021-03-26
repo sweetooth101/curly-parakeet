@@ -3,8 +3,7 @@ import '../assets/sass.scss';
 import me from '../assets/img/4A3A4774.jpg'
 import Git from '../assets/img/github64.png'
 import LI from '../assets/img/bl-li.png'
-import Email from '../assets/img/email.png'
-import Resume from '../assets/img/resume.png'
+
 
 const About = () => {
     return(
