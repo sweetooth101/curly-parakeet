@@ -1,37 +1,38 @@
-import React, {createContext, useCallback, useEffect, useState, } from 'react';
-
+import React, {useCallback, useEffect, useState, useContext } from 'react';
+import ProjectContext from './projects.js'
 
 function BBar(){
     const [project, setProject] = useState('PROJECTS')
     
     const [hover, setHover] = useState(false)
     const [arrow, setArrow] = useState('▼')
- 
+    
     const [number, setNumber] = useState(0)
+    const [page, setPage] = useState(null)
+   
+    const data = useContext(ProjectContext)
 
- 
     const checkScroll = () => {
-        if(number>0){
+        if(number>350){
             setArrow('▲')
             setProject('ABOUT')
+            setPage(0)
+            
             
         } else{
             setArrow('▼')
             setProject('PROJECTS')
+            setPage(1)
             
         }
     }
  
     const  handleScroll = useCallback(() =>{
+    
         setNumber(window.pageYOffset)
         checkScroll()
     },[checkScroll]);
 
-   
-
-    
-
-    
     
     useEffect(()=>{
         handleScroll()
@@ -39,6 +40,17 @@ function BBar(){
     }, [ handleScroll])
 
    const clickHandler= (e) =>{
+        
+        if(page > 1){
+            window.scrollTo({
+                top:628
+            })
+            console.log('gu')
+        }else{
+            window.scrollTo({
+                top:0
+            })
+        }
         
    }
 
@@ -51,7 +63,7 @@ function BBar(){
             </div>
             <div className='button-container' >
                 {<button className='button-01 button-02 btn'
-                onClick={()=>console.log('hi')}
+                onClick={clickHandler}
                 onMouseEnter={()=>setHover(true)}
                 onMouseOut={()=>setHover(false)}>{ hover? (arrow) : (project)  }</button>}
                 
