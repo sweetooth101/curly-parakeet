@@ -1,5 +1,5 @@
 import React, {useCallback, useEffect, useState, useContext } from 'react';
-import ProjectContext from './projects.js'
+
 
 function BBar(){
     const [project, setProject] = useState('PROJECTS')
@@ -10,7 +10,7 @@ function BBar(){
     const [number, setNumber] = useState(0)
     const [page, setPage] = useState(null)
    
-    const data = useContext(ProjectContext)
+    
 
     const checkScroll = () => {
         if(number>350){
@@ -40,15 +40,19 @@ function BBar(){
     }, [ handleScroll])
 
    const clickHandler= (e) =>{
-        
-        if(page > 1){
+
+        if(page === 1){
+            console.log('hi',page)
+            
             window.scrollTo({
-                top:628
+                top:681,
+                behavior:'smooth'
             })
-            console.log('gu')
         }else{
+            console.log('ho',page)
             window.scrollTo({
-                top:0
+                top:0,
+                behavior:'smooth'
             })
         }
         
@@ -62,10 +66,12 @@ function BBar(){
                 <div className='border-space bottom right'/>
             </div>
             <div className='button-container' >
-                {<button className='button-01 button-02 btn'
+                <button className='button-01 button-02 btn'
                 onClick={clickHandler}
                 onMouseEnter={()=>setHover(true)}
-                onMouseOut={()=>setHover(false)}>{ hover? (arrow) : (project)  }</button>}
+                onMouseOut={()=>setHover(false)}>{ hover? (arrow) : (project)  }  </button>
+
+           
                 
                 
                  

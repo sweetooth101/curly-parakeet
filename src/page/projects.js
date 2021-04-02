@@ -1,4 +1,4 @@
-import React, {createContext, createRef,  useEffect, useState,useCallback} from'react';
+import React, { createRef,  useEffect, useState} from'react';
 import '../assets/sass.scss';
 import react from '../assets/img/react.png'
 import node from '../assets/img/node.png'
@@ -6,30 +6,16 @@ import IpadPro from '../assets/img/ipadpro.png'
 
 import IphoneX from '../assets/img/tenantly-iphonex.png'
 
-export const ProjectContext = createContext()
+
 
 function Projects(){
+    const proRef = createRef()
 
-    const [project, setProject] = useState(null)
-
-    const rref = createRef();
-   
+    console.log(proRef)
     
-  
-    
-    
-    useEffect(()=>{
-        setProject(rref.current.offsetTop)
-        console.log('project',rref.current.offsetTop)
-        
-        
-    },[project])
-
-    console.log(rref.current)
-
     return (
-            <ProjectContext.Provider value={project}>
-                <div  ref={rref} className='projects-wrapper' id={'projects'}>
+           
+                <div ref={proRef}  className='projects-wrapper' id={'projects'}>
                 
                     <ul className='projects'>
                         
@@ -165,7 +151,7 @@ function Projects(){
                             </div>
                     </ul>
                 </div>
-            </ProjectContext.Provider>     
+             
             
       
     )
