@@ -10,7 +10,7 @@ import reactDom from 'react-dom';
 function App() {
 
   const projectRef = createRef()
-  console.log('app', projectRef)
+  console.log('app', projectRef.current)
 
  
 
@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <NavBar  />
       <About/>
-      <Projects ref={projectRef}/>
+      <Projects ref={()=>projectRef}/>
       <BBar />
     </div>
   );
