@@ -397,7 +397,7 @@ button{
     bottom:-0.5rem
 }
 
-@media (max-width:1024px){
+@media (max-width:1084px){
     .about{
         flex-direction: column;
     }
@@ -410,19 +410,29 @@ button{
         width:100%;
         padding-top:2em;
     }
+
+    .projects{
+        flex-direction: column;
+    }
+
+    .project{
+        width:100%;
+    }
+
+    .project:nth-child(even){
+        border-left: solid 1px $cerulean;
+    }
+
+     .bottom.middle{
+        display: none;
+    }
 }
 
 
 @media (max-width: 768px){
-    .about-wrapper{
-        width:85%;
-        margin-left:auto;
-        margin-right: auto;
-    }
 
-    .about{
-        width:100%;
-        
+    .about-text{
+        padding: 3rem;
     }
 
     .about-photo{
@@ -435,4 +445,14 @@ button{
     }
 
    
+}
+
+@media(max-width:375px){
+    .project{
+        flex-direction: column;
+    }
+
+    .device-images img:nth-child(1){
+        width:200px
+    }
 }

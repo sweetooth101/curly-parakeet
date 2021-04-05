@@ -18,8 +18,8 @@ const About = () => {
                     <h3> After some introductory online React classes, I was hooked; I knew software engineering was the career path for me.  In June 2018, I enrolled in Lambda for an immersive full-stack course.  Upon graduating I was offered a Team Lead position to help the next cohort of students in their journey of software engineering. As a result I was hired by Mobile Wash to contribute to develop Frontend, Backend features and help release app updates every 2-3 weeks with QA support. </h3>
                     <h3>When I’m not being a professional computer nerd…I’m probably planning my next adventure around Los Angeles, going on hikes or drives. </h3>
                     <div className='icons'>
-                        <img src={LI} alt='Linkedin Logo'/> 
-                        <img src={Git} alt='Git Logo' />
+                        <a href='https://www.linkedin.com/in/victor-gordian/'><img src={LI} alt='Linkedin Logo'/> </a>
+                        <a href='https://github.com/sweetooth101'><img src={Git} alt='Git Logo' /></a>
                     </div>
                 </div>
             </div>
