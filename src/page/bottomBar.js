@@ -1,7 +1,7 @@
-import React, {useCallback, useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 
 
-function BBar(){
+function BBar(props){
     const [project, setProject] = useState('PROJECTS')
     
     const [hover, setHover] = useState(false)
@@ -11,45 +11,42 @@ function BBar(){
     const [page, setPage] = useState(null)
    
     
-
-    const checkScroll = () => {
-        if(number>350){
-            setArrow('▲')
-            setProject('ABOUT')
-            setPage(0)
-            
-            
-        } else{
-            setArrow('▼')
-            setProject('PROJECTS')
-            setPage(1)
-            
-        }
-    }
- 
-    const  handleScroll = useCallback(() =>{
-    
-        setNumber(window.pageYOffset)
-        checkScroll()
-    },[checkScroll]);
-
     
     useEffect(()=>{
+        const checkScroll = () => {
+            if(number>350){
+                setArrow('▲')
+                setProject('ABOUT')
+                setPage(0)
+                
+                
+            } else{
+                setArrow('▼')
+                setProject('PROJECTS')
+                setPage(1)
+                
+            }
+        }
+        const  handleScroll = () =>{
+    
+            setNumber(window.pageYOffset)
+            checkScroll()
+        };
+
+
         handleScroll()
         window.addEventListener('scroll', setNumber)
-    }, [ handleScroll])
+    }, [number])
 
    const clickHandler= (e) =>{
 
         if(page === 1){
-            console.log('hi',page)
-            
             window.scrollTo({
-                top:681,
+                top:props.projectRef.current.offsetTop-45,
                 behavior:'smooth'
             })
         }else{
-            console.log('ho',page)
+       
             window.scrollTo({
                 top:0,
                 behavior:'smooth'

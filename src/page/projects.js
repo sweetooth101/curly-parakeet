@@ -1,4 +1,4 @@
-import React, { createRef,  useEffect, useState} from'react';
+import React, {forwardRef} from'react';
 import '../assets/sass.scss';
 import react from '../assets/img/react.png'
 import node from '../assets/img/node.png'
@@ -8,10 +8,7 @@ import IphoneX from '../assets/img/tenantly-iphonex.png'
 
 
 
-function Projects(){
-    const proRef = createRef()
-
-    console.log(proRef)
+const Projects =forwardRef(( props,proRef) =>{
     
     return (
            
@@ -124,6 +121,61 @@ function Projects(){
                                 </div>    
                             </div>
                             <div className='project'>
+
+                                
+                                    <div className='border-space top-left'/>
+                                    <div className='border-space top-right'/>
+                                    <div className='border-space bottom-left'/>
+                                    <div className='border-space bottom-right'/>
+                                                    
+                                <div className='name'>
+                                    <h1>Tenantly</h1>
+                                    <h3>A property management application that makes the communication 
+                                        and financial transactions easier between the tenant and landlord. 
+                                        With two distict dashboards both tenants and clients have all of the 
+                                        tools needed to efficiently resolve work orders and track payments.</h3>
+                                </div>
+                                <div className='deviceImages-wrapper'>
+                                    <div className='stack-icons'>
+                                        <img src={react} alt='react'/>
+                                        <img src={node} alt='node'/>
+                                    </div>
+                                    <div className='device-images'>
+                                        <img src={IpadPro} alt='Ipad'/>
+                                        <img src={IphoneX} alt='Ipad'/>
+                                    </div>
+                                    
+                                </div>    
+                            </div>
+                            <div className='project'>
+
+                                
+                                    <div className='border-space top-left'/>
+                                    <div className='border-space top-right'/>
+                                    <div className='border-space bottom-left'/>
+                                    <div className='border-space bottom-right'/>
+                                                    
+                                <div className='name'>
+                                    <h1>Tenantly</h1>
+                                    <h3>A property management application that makes the communication 
+                                        and financial transactions easier between the tenant and landlord. 
+                                        With two distict dashboards both tenants and clients have all of the 
+                                        tools needed to efficiently resolve work orders and track payments.</h3>
+                                </div>
+                                <div className='deviceImages-wrapper'>
+                                    <div className='stack-icons'>
+                                        <img src={react} alt='react'/>
+                                        <img src={node} alt='node'/>
+                                    </div>
+                                    <div className='device-images'>
+                                        <img src={IpadPro} alt='Ipad'/>
+                                        <img src={IphoneX} alt='Ipad'/>
+                                    </div>
+                                    
+                                </div>    
+                            </div>
+                            <div className='project'>
+
                                 
                                     <div className='border-space top-left'/>
                                     <div className='border-space top-right'/>
@@ -155,6 +207,6 @@ function Projects(){
             
       
     )
-}
+})
 
 export default Projects;

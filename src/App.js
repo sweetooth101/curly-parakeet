@@ -4,26 +4,21 @@ import NavBar from './page/navBar.js'
 import About from './page/about.js'
 import Projects from './page/projects';
 import BBar from './page/bottomBar';
-import { createRef, useEffect } from 'react';
-import reactDom from 'react-dom';
+import { createRef } from 'react';
+
 
 function App() {
 
   const projectRef = createRef()
-  console.log('app', projectRef.current)
 
- 
 
-  useEffect(()=>{
-    console.log(reactDom.findDOMNode(Projects.proref))
-})  
 
   return (
     <div className="App">
       <NavBar  />
       <About/>
-      <Projects ref={()=>projectRef}/>
-      <BBar />
+      <Projects ref={projectRef}/>
+      <BBar projectRef={projectRef}/>
     </div>
   );
 }
