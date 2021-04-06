@@ -88,12 +88,8 @@ button{
 .about-wrapper{
     width:100%;
     margin-top:3rem;
-    position: relative;
     background-color: $white;
     border-bottom: 1px solid $cerulean;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
 }
 
 .about{
@@ -425,6 +421,9 @@ button{
 
      .bottom.middle{
         display: none;
+    }
+    .top.middle{
+        display:none;
     }
 }
 
