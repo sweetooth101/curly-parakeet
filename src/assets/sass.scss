@@ -29,9 +29,7 @@ button{
     left:0;
     border-bottom:1px solid $cerulean; 
     background-color: $white;
-    letter-spacing: 1.75px;
     color:$cerulean;
-    font-weight: 700;
     z-index: 99;
     height:4.5em;
     
@@ -90,6 +88,7 @@ button{
     margin-top:3rem;
     background-color: $white;
     border-bottom: 1px solid $cerulean;
+    align-items: center;
 }
 
 .about{
@@ -446,6 +445,23 @@ button{
    
 }
 
+
+@media(max-width:550px){
+    .borderSpace-wrapper{
+        width:90%;
+    }
+
+    .nav{
+        width:90%;
+    }
+    .about{
+        width:90%;
+    }
+    .projects-wrapper{
+        width:90%;
+    }
+}
+
 @media(max-width:375px){
     .project{
         flex-direction: column;
@@ -454,4 +470,5 @@ button{
     .device-images img:nth-child(1){
         width:200px
     }
+
 }
