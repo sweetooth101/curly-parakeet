@@ -63,7 +63,7 @@ function BBar(props){
                 <div className='border-space bottom right'/>
             </div>
             <div className='button-container' >
-                <button className='button-01 button-02 btn'
+                <button className='btn'
                 onClick={clickHandler}
                 onMouseEnter={()=>setHover(true)}
                 onMouseOut={()=>setHover(false)}>{ hover? (arrow) : (project)  }  </button>
