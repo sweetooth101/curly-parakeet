@@ -66,5 +66,5 @@ a:-webkit-any-link {
 }
 
 html,body{
-	overflow: hidden;
+	overflow-x: hidden;
 }
