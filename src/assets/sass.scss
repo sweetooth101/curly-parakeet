@@ -178,6 +178,14 @@ button{
 }
 
 
+.device-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.name{
+    margin-left: 10px;
+}
 
 
 .name h1{
@@ -188,8 +196,8 @@ button{
 
 .name h3{
     font-family: $font-projects;
-    font-size: 1.7rem;
-    line-height: 1.9rem;
+    font-size: 1.50rem;
+    line-height: 1.7rem;
     font-weight: 400;
 }
 
