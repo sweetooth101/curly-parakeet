@@ -161,7 +161,6 @@ button{
 .project{
     display:flex;
     flex-direction: column;
-    align-items: center;
     width:50%;
     min-height: 23rem;
     padding:1.75rem;
@@ -183,24 +182,90 @@ button{
     flex-direction: row;
 }
 
-.name{
-    margin-left: 10px;
-}
 
 
-.name h1{
+.project h1{
     font-size:2.5rem;
     font-family: $font-projects;
     margin-bottom:.7em;
 }
-
-.name h3{
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.description h3{
+    margin-left:10px ;
     font-family: $font-projects;
     font-size: 1.50rem;
     line-height: 1.7rem;
     font-weight: 400;
 }
 
+
+.links{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:35px;
+}
+.btn-left{
+    width:40%;
+}
+
+.btn-right{
+    width:40%;
+}
+.btn-projects{
+    width:80%;
+    height:40px;
+    padding:0.5rem;
+    border:none;
+    color:$cerulean;
+    background-color: white;
+    border-right: 1px solid $cerulean;
+    border-left: 1px solid $cerulean;
+
+}
+
+.tags{
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    margin:40px auto 0 auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.tags div{
+    margin:0.5rem 0.5rem 0 0;
+
+}
+
+.react{
+    border-bottom: 2px solid #61dafb;
+}
+
+.node{
+    border-bottom: 2px solid  #43853d;
+}
+
+.pg{
+    border-bottom: 2px solid #336791;
+}
+
+.stripe{
+    border-bottom: 2px solid #96f;
+}
+
+.express{
+    border-bottom: 2px solid #aeaeae;
+}
+
+.tags div h1{
+    font-size: 1.3rem;
+
+}
 
 .deviceImages-wrapper{
     position: relative;
@@ -240,9 +305,6 @@ button{
     align-items: center;
 }
 
-.stack-icons:hover{
-    opacity: 1;
-}
 
 
 .stack-icons img{
