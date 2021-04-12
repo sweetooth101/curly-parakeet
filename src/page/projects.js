@@ -17,17 +17,23 @@ const Projects =forwardRef(( props,proRef) =>{
                     
                     <ul className='projects'>
                             {Work.map(function(item,i){
-                                console.log(item.images[0].url)
+                             
                                 return <div className='project' key={i}>
                                     <div className='border-space top-left'/>
                                     <div className='border-space top-right'/>
-                                    <div className='border-space bottom-left'/>
-                                    <div className='border-space bottom-right'/>
                                     <h1>{item.title}</h1>
-                                    <div className='device=wrapper'>
+                                    <div className='device-wrapper'>
+                                        {item.images ? 
                                         <div className='deviceImages-wrapper'>
-                                            <img src={item.images[0].url}  alt={item.images[0].name}/>
+                                        <div className='device-images'>                
+                                            <img src={item.images[0].url} alt={item.images[0].name}/>
+                                            <img src={item.images[1].url} alt={item.images[1].name} />
                                         </div>
+                                        
+                                    </div>
+                                    :null
+                                    }
+                                       
                                         <div className='description'>
                                             <h3>{item.description}</h3>
                                             <div className='links'>

@@ -23,11 +23,11 @@
         "images":[
             {   
             "name":"Ipad",
-            "url":"https://github.com/sweetooth101/curly-parakeet/blob/main/src/assets/img/ipadpro.png"
+            "url":"https://raw.githubusercontent.com/sweetooth101/curly-parakeet/main/.github/images/ipadpro.png"
             },
             {
             "name":"Iphone",
-            "url":"../assets/img/tenantly-iphonex.png"
+            "url":"https://raw.githubusercontent.com/sweetooth101/curly-parakeet/main/.github/images/tenantly-iphonex.png"
             }
         ]
            
