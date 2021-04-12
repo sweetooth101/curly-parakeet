@@ -487,6 +487,10 @@ button{
         width:100%;
     }
 
+    .device-wrapper{
+        flex-direction: column;
+    }
+
     .project:nth-child(even){
         border-left: solid 1px $cerulean;
     }
