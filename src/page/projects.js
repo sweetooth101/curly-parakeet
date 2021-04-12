@@ -5,7 +5,7 @@ import IpadPro from '../assets/img/ipadpro.png'
 
 import IphoneX from '../assets/img/tenantly-iphonex.png'
 
-
+import '../assets/img/ipadpro.png'
 
 const Projects =forwardRef(( props,proRef) =>{
     console.log(Work.map(function(item,i){
@@ -14,9 +14,35 @@ const Projects =forwardRef(( props,proRef) =>{
     return (
            
                 <div ref={proRef}  className='projects-wrapper' id={'projects'}>
-                
+                    
                     <ul className='projects'>
-                        
+                            {Work.map(function(item,i){
+                                console.log(item.images[0].url)
+                                return <div className='project' key={i}>
+                                    <div className='border-space top-left'/>
+                                    <div className='border-space top-right'/>
+                                    <div className='border-space bottom-left'/>
+                                    <div className='border-space bottom-right'/>
+                                    <h1>{item.title}</h1>
+                                    <div className='device=wrapper'>
+                                        <div className='deviceImages-wrapper'>
+                                            <img src={item.images[0].url}  alt={item.images[0].name}/>
+                                        </div>
+                                        <div className='description'>
+                                            <h3>{item.description}</h3>
+                                            <div className='links'>
+                                            <div className='btn-left'>
+                                            <a href={item.links[1].url}><button className='btn-projects'>{item.links[1].name}</button></a>
+                                            </div>
+                                            <div className='btn-right'>
+                                            <a href={item.links[0]}><button className='btn-projects'>Visit</button></a>
+                                            </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            })}
                             <div className='project'>
                             
                                     <div className='border-space top-left'/>

@@ -1,6 +1,8 @@
+
+
 [
     {
-        "Title": "Tenantly",
+        "title": "Tenantly",
         "description": "A property management application that makes the communication and financial transactions easier between the tenant and landlord. With two distict dashboards both tenants and clients have all of the tools needed to efficiently resolve work orders and track payments. ",
         "links":[
             {
@@ -17,11 +19,21 @@
             "Node",
             "Express",
             "Stripe"
+        ],
+        "images":[
+            {   
+            "name":"Ipad",
+            "url":"https://github.com/sweetooth101/curly-parakeet/blob/main/src/assets/img/ipadpro.png"
+            },
+            {
+            "name":"Iphone",
+            "url":"../assets/img/tenantly-iphonex.png"
+            }
         ]
            
     },
     {
-        "Title": "Tenantly2",
+        "title": "Tenantly2",
         "description": "A property management application that makes the communication and financial transactions easier between the tenant and landlord. With two distict dashboards both tenants and clients have all of the tools needed to efficiently resolve work orders and track payments. ",
         "links":[
             {
@@ -39,6 +51,7 @@
             "Express",
             "Stripe"
         ]
+        
            
     }
 ]
