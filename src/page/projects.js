@@ -1,7 +1,6 @@
 import React, {forwardRef} from'react';
 import '../assets/sass.scss';
-import react from '../assets/img/react.png'
-import node from '../assets/img/node.png'
+import Work from '../data/works.json'
 import IpadPro from '../assets/img/ipadpro.png'
 
 import IphoneX from '../assets/img/tenantly-iphonex.png'
@@ -9,7 +8,9 @@ import IphoneX from '../assets/img/tenantly-iphonex.png'
 
 
 const Projects =forwardRef(( props,proRef) =>{
-    
+    console.log(Work.map(function(item,i){
+        return<li key={i}><ul></ul></li>
+    }))
     return (
            
                 <div ref={proRef}  className='projects-wrapper' id={'projects'}>
