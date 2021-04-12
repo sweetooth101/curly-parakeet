@@ -18,7 +18,8 @@
             "React",
             "Node",
             "Express",
-            "Stripe"
+            "Stripe",
+            "Postgres"
         ],
         "images":[
             {   
@@ -49,7 +50,8 @@
             "React",
             "Node",
             "Express",
-            "Stripe"
+            "Stripe",
+            "Postgres"
         ]
         
            
