@@ -1,6 +1,5 @@
 import React from 'react';
 import '../assets/sass.scss';
-import me from '../assets/img/4A3A4774.jpg'
 import Git from '../assets/img/github64.png'
 import LI from '../assets/img/bl-li.png'
 
@@ -10,7 +9,7 @@ const About = () => {
         <div className='about-wrapper'>
             <div className='about'>
                 <div className='about-photo'>
-                    <img src={me} alt='tree'/> 
+                    <img src='https://raw.githubusercontent.com/sweetooth101/curly-parakeet/main/.github/images/4A3A4774.jpg' alt='tree'/> 
                 </div>
                 <div className='about-text'>
                     <h1>Hi there! 👋 <br className='br'/> I'm Victor Gordian</h1>
