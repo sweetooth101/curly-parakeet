@@ -5,9 +5,7 @@ import Work from '../data/works.json';
 import '../assets/img/ipadpro.png';
 
 const Projects =forwardRef(( props,proRef) =>{
-    console.log(Work.map(function(item,i){
-        return<li key={i}><ul></ul></li>
-    }))
+    
     return (
            
                 <div ref={proRef}  className='projects-wrapper' id={'projects'}>

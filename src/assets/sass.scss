@@ -140,6 +140,9 @@ button{
 }
 
 
+.br{
+    display:none;
+}
 
 
 /*projects*/
@@ -206,7 +209,7 @@ button{
 .links{
     display:flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     margin-top:35px;
 }
 .btn-left{
@@ -217,7 +220,7 @@ button{
     width:40%;
 }
 .btn-projects{
-    width:80%;
+    width:100%;
     height:40px;
     padding:0.5rem;
     border:none;
@@ -232,7 +235,7 @@ button{
     display: flex;
     flex-direction: row;
     width:80%;
-    margin:40px auto 0 auto;
+    margin:40px auto;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
@@ -269,6 +272,7 @@ button{
 
 .deviceImages-wrapper{
     position: relative;
+    margin:0 auto;
 }
 
 .device-images{
@@ -348,7 +352,7 @@ button{
     height: 100%;
     background-color: white;
     border: none;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color:$cerulean;
     outline: none;
 }
@@ -367,7 +371,7 @@ button{
     padding:0;
     background-color: $white;
     border:0;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color:$cerulean;
     outline: none;
 }
@@ -547,6 +551,16 @@ button{
     }
    
 }
+
+@media(max-width:445px){
+    .br{
+        display:unset;
+    }
+    .about h1{
+        line-height: 1.1;
+    }
+}
+
 
 @media(max-width:375px){
     .project{

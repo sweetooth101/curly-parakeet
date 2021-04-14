@@ -13,7 +13,7 @@ const About = () => {
                     <img src={me} alt='tree'/> 
                 </div>
                 <div className='about-text'>
-                    <h1>Hi there! 👋 I'm Victor Gordian</h1>
+                    <h1>Hi there! 👋 <br className='br'/> I'm Victor Gordian</h1>
                     <h3>
                     Highly motivated, self-starting developer seeking to launch a career building web applications and services. With some introductory online Javascript 
                     classes in 2014, I was hooked into the world of software development. My interest in software led me to start as a WordPress developer, then a Jr QA which 
