@@ -549,13 +549,14 @@ button{
     .button-container{
         width:90%;
     }
+    .br{
+        display:unset;
+    }
    
 }
 
 @media(max-width:445px){
-    .br{
-        display:unset;
-    }
+    
     .about h1{
         line-height: 1.1;
     }

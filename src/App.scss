@@ -1,6 +1,9 @@
 
 
-
+$bg-dark-mode: #000;
+$grey-dark-mode:rgba(66,66,66,0.712);
+$white-text:#fff;
+$primary:rgb(0,132,255);
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -30,5 +33,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.dark-mode{
+  background-color: $bg-dark-mode;
+  color:$white-text;
+  
+}
+
+.theme-change{
+  position: absolute;
+  top:55px;
+  left: 84%;
+  
+}
+
+.theme-btn{
+  background-color: transparent;
+  outline: none;
+  border:1px solid #27A3E7;
+  color: #27A3E7;
+  padding:.5rem 1.5rem;
+}
+
+@media (max-width:1084px){
+
+    .theme-change{
+      left:75%;
+    }
+
 }
 

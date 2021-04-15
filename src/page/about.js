@@ -1,17 +1,21 @@
 import React from 'react';
+import ThemeChanger from './themeChange.js'
 import '../assets/sass.scss';
+import '../../src/App.scss'
 import Git from '../assets/img/github64.png'
 import LI from '../assets/img/bl-li.png'
 
 
 const About = () => {
+    
     return(
-        <div className='about-wrapper'>
+        <div className='about-wrapper ' id='about-wrapper'>
+            <ThemeChanger />
             <div className='about'>
                 <div className='about-photo'>
                     <img src='https://raw.githubusercontent.com/sweetooth101/curly-parakeet/main/.github/images/4A3A4774.jpg' alt='tree'/> 
                 </div>
-                <div className='about-text'>
+                <div className='about-text '>
                     <h1>Hi there! 👋 <br className='br'/> I'm Victor Gordian</h1>
                     <h3>
                     Highly motivated, self-starting developer seeking to launch a career building web applications and services. With some introductory online Javascript 
