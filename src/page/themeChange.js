@@ -75,6 +75,7 @@ const ThemeChanger = () =>{
             document.body.getElementsByClassName('border-space')[0].style.background='black';
             document.body.getElementsByClassName('bar-bottom')[0].style.background = 'black';
             document.body.getElementsByClassName('btn-projects')[0].style.background = 'black';
+            document.body.getElementsByClassName('icons')[0].style.background = '#27A3E7';
 
             
 
@@ -95,7 +96,7 @@ const ThemeChanger = () =>{
             document.body.getElementsByClassName('btn')[0].style.background = 'white';
             document.body.getElementsByClassName('bar-bottom')[0].style.background = 'white';
             document.body.getElementsByClassName('btn-projects')[0].style.background = 'white';
-            
+            document.body.getElementsByClassName('icons')[0].style.background = 'none';
         }
 
         
