@@ -232,6 +232,11 @@ button{
 
 }
 
+.btn-projects:hover{
+    box-shadow: 0 0 8px $cerulean;
+    z-index: 50;
+}
+
 .tags{
     display: flex;
     flex-direction: row;
