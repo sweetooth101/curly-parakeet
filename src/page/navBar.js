@@ -1,7 +1,7 @@
 import React from'react';
 import '../assets/sass.scss';
 
-import pdf from '../assets/docs/Victor_Gordian_Resume.pdf'
+import pdf from '../assets/docs/Resume01.pdf'
 
 
 
