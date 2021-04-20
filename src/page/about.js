@@ -24,7 +24,7 @@ const About = () => {
                     Team Lead position to help the next cohort of students in their journey of software development. As a result, I was hired by Mobile Wash to assit the Project Owner with planning, tracking and executing, as a Project Manager.
                     </h3>
                     
-                    <h3>When I’m not coding…I’m probably planning my next adventure around Los Angeles, going on hikes or drives.  </h3>
+                    <h3>When I am not applying to jobs or working on projects, I like to hike or have a good run. I have been playing Wild Rift, a mobile game but I won’t consider myself a mobile gamer.  </h3>
                     <div className='icons'>
                         <a href='https://www.linkedin.com/in/victor-gordian/'><img src={LI} alt='Linkedin Logo'/> </a>
                         <a href='https://github.com/sweetooth101'><img src={Git} alt='Git Logo' /></a>
